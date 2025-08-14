@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style/stylo.css">
+    <title>contacto</title>
+</head>
+
+<body class="contenedor">
+    <header>
+        <div class="logo">
+            <img class="imagen-logo" src="./img/logo 1.png" alt="logo">
+        </div>
+        <div class="titulo">
+            <h1> Venta de sabanas y acolchados</h1>
+            <h2>Todo para tu cama o sommier</h2>
+        </div>
+
+        <div class="menu">
+            <nav>
+                <a href="./index.html" class="nav-">Inicio</a>
+                <a href="./productos.html" class="nav-">Productos</a>
+                <a href="./reseña.html" class="nav-">Reseña</a>
+                <a href="./contacto.html" class="nav-">Contacto</a>
+                <a href="" class="nav-">
+                    <label for="btn-modal">
+                        <div class="carrito">
+                            <span><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span id="contador">0</span>
+                        </div>
+                    </label>
+                </a>
+            </nav>
+        </div>
+        <input type="checkbox" id="btn-modal">
+        <div class="contenedor_modal">
+            <div class="contenido_modal">
+                <h1>Tienda Online</h1>
+                <div id="carrito">
+                    <h2>Carrito de Compras</h2>
+                    <ul id="lista-carrito"></ul>
+                    <p>Total: $<span id="total-carrito">0</span></p>
+                    <ul id="lista-carrito"></ul>
+                </div>
+                <hr>
+
+
+                <button id="btnPagar">pagar</button>
+                <button id="vaciar-carrito">Vaciar Carrito</button>
+                <div class="btn-cerrar">
+                    <label for="btn-modal">cerrar</label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="contenedor_contactos">
+            <div class="mensaje">
+                <h2>Mensaje</h2>
+                <form action="https://formspree.io/f/myzpkaev" method="POST">
+                    <div class="nombre">
+                        <input type="text" name="Nombre" id="nombre" placeholder="nombre">
+                        <br>
+                    </div>
+                    <div class="mail">
+                        <input type="email" name="Email" id="email" placeholder="email">
+                        <br>
+                    </div>
+                    <div class="mensaje2">
+                        <textarea name="mensaje" id="mensaje" rows="8" cols="20"
+                            placeholder="Escribe tu mensaje"></textarea>
+                        <br>
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" name="submit" id="submit" placeholder="Enviar">
+                        <br>
+                    </div>
+                    <div class="borrar">
+                        <input type="reset" name="reset" id="reset" placeholder="Borrar">
+                    </div>
+                </form>
+            </div>
+            <div class="ubicación">
+                <div class="titulo-ubica">
+                    <h2> Conócenos !</h2>
+                    <h3>Av Snopek 1374 , San Salvador de Jujuy .</h3>
+                </div>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.8736041476454!2d-65.26796822706302!3d-24.24619913920629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b07ca698050db%3A0xc96d5f866113865d!2sAv.%20Ing.%20Carlos%20Snopek%201374%2C%20Y4609%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1746139260473!5m2!1ses-419!2sar"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="foto">
+                    <img src="./img/frente de ubicación.JPG" alt="foto de tienda" width="20%" height="10%">
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <section class="seccion-1">
+            <div>
+                <h3>Contactos</h3>
+                <p>info@gmail.com</p>
+                <p>+54 011 65887766</p>
+                <p>Av. Snopek 1374</p>
+            </div>
+            <div>
+                <h3>Links</h3>
+                <a href="">Inicio</a>
+                <a href="">Contacto</a>
+                <a href="">Reseñas</a>
+                <a href="">Productos</a>
+            </div>
+            <div>
+                <h3>Redes Sociales</h3>
+                <div class="redes-sociales">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-2">
+            <p><i class="fa-regular fa-copyright"></i>Desarrollado por :Felix Salvatierra - 2025 |<i class="fa-regular fa-envelope"></i>
+                <a href="mailto:salvadreams@gmail.com">Email :salvadreams@gmail.com</a>
+            </p>
+        </section>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
