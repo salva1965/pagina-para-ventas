@@ -5,9 +5,8 @@ body {
     min-height: 100vh;
     margin: 0
 }
-* {
-    color: #103e7a;
-}
+
+/*header*/
 header {
     display: flex;
     justify-content: space-between;
@@ -17,6 +16,7 @@ header {
     border: 10px outset #298aa7;
     z-index: 1;
     background-color: #7fdbff;
+    color: #103e7a;
 }
 .logo {
     text-align: center;
@@ -49,11 +49,12 @@ nav a:hover {
 button:hover {
     color: red;
 }
+/* carrito */
 #btnPagar {
-    border-radius: 25%;
+    border-radius: 10%;
 }
 #vaciar-carrito {
-    border-radius: 25%;
+    border-radius: 10%;
 }
 .fa-cart-shopping{
     font-size: 1.1em;
@@ -72,6 +73,7 @@ button:hover {
     border-radius: 50%;
 
 }
+/* main index */
 .contenedor_inicio {
     display: flex;
     justify-content: center;
@@ -87,6 +89,7 @@ main {
     background-image: url(/img/Background\ 16.png);
     background-size: cover;
     margin: 0;
+    color: #103e7a;
 }
 /*modal*/
 .contenedor_modal{
@@ -108,11 +111,12 @@ main {
     
 }
 .contenido_modal h2,p {
-    font-size: .9em;
+    font-size: 1.2em;
 }
-.contenido_modal button{
-    font-size: .6em;
-    height: 1,5em;
+.contenido_modal button {
+    height: 2em;
+    font-size: large;
+    
 }
 #btn-modal{
     display: none;
@@ -121,11 +125,16 @@ main {
     display: flex;
 }
 .btn-cerrar{
-    font-size: .6em;
-    height: 1,5em;
+    font-size: 1.2em;
+    height: 2,5em;
     display: flex;
     justify-content:flex-end ;
+    color: #103e7a;
 }
+#carrito {
+    font-size: 1.5em;
+}
+/* pagina contactos */
 .contenedor_contactos {
     display: flex;
     justify-content:baseline;
@@ -134,12 +143,14 @@ main {
 
 }
 .mensaje {
-    margin: 5%;
-
+    margin: 2%;
+    color: #103e7a;
     place-items: center;
     text-align: center;
-    width: 20%;
-
+    width: 39%;
+    height: 80%;
+    background-color:#7fdbff;
+    border-radius: 5%;
 }
 .ubicacion {
     display: flex;
@@ -167,14 +178,17 @@ main {
     margin-top: 15%;
     padding: 2%;
     text-align: center;
+   
 }
 .mail {
     padding: 2%;
+    
 }
 .mensaje2 {
     padding: 1%;
+
 }
-/* productos */
+/* pagina productos */
 .contenedor_productos {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(
@@ -218,8 +232,9 @@ main {
 
 button {
     background-color: #7fdbff;
+    color: #103e7a;
+    border-radius: 10%;
     
-    border-radius: 25%;
 }
 ul {
     list-style: none;
@@ -237,10 +252,12 @@ ul {
 }
 /* compra */
 #botonEnviar {
+    font-size: large;
     margin: 2%;
+   
 }
 footer {
-    
+    color: #103e7a;
     text-align: center;
     background-color: #7fdbff;
     width: 100%;
@@ -257,6 +274,7 @@ footer p {
 }
 footer a {
     padding-bottom: 1%;
+    color: #103e7a;
 }
 footer .seccion-1 {
     padding: 1% 0;
@@ -292,4 +310,26 @@ footer .redes-sociales a{
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+}
+/*whatsapp*/
+.float {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color:  #fff ;
+    border-radius: 50%;
+    text-align: center;
+    
+    z-index: 999;
+}
+.fa-whatsapp {
+    padding-top: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+.float:hover {
+    background-color: #27e76d;
 }

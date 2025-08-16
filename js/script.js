@@ -87,7 +87,7 @@ function pagar() {
     localStorage.setItem('productos', JSON.stringify(carrito));
     localStorage.setItem('total', total.toFixed(2));
 
-    alert(`Total a pagar: $${total.toFixed(2)}`);
+
     window.location.href = "compra.html";
 }
 

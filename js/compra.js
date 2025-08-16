@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function enviarFormulario(event) {
         
         const nombreContacto = document.getElementById('nombre').value.trim();
-        const emailContacto = document.getElementById('contactoEmail').value.trim();
+        const emailContacto = document.getElementById('email').value.trim();
         const telefonoContacto = document.getElementById('telefono').value.trim();
 
         if (!nombreContacto || !emailContacto) {
