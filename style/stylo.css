@@ -86,7 +86,7 @@ button:hover {
     margin: 1%;
 }
 main {
-    background-image: url(/img/Background\ 16.jpg);
+    background-image: url(/img/Background\ 16.png);
     background-size: cover;
     margin: 0;
     color: #103e7a;
@@ -334,3 +334,4 @@ footer .redes-sociales a{
     background-color: #27e76d;
 
 }
+
