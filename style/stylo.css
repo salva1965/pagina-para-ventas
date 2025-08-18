@@ -86,7 +86,7 @@ button:hover {
     margin: 1%;
 }
 main {
-    background-image: url(/img/Background\ 16.png);
+    background-image: url(/img/Background\ 16.jpg);
     background-size: cover;
     margin: 0;
     color: #103e7a;
@@ -254,7 +254,10 @@ ul {
 #botonEnviar {
     font-size: large;
     margin: 2%;
-   
+}
+.reset {
+    font-size: large;
+    margin: 2%;
 }
 footer {
     color: #103e7a;
@@ -332,6 +335,4 @@ footer .redes-sociales a{
 }
 .float:hover {
     background-color: #27e76d;
-
 }
-
