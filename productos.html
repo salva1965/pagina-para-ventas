@@ -4,220 +4,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <link rel="stylesheet" href="./style/stylo.css">
     <title>Productos</title>
 </head>
 
 <body>
-    <a href="https://wa.me/541165779977?text=Deseo%20consultar%20" target="_blank" class="float">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-    <header>
-        <div class="logo">
-            <img class="imagen-logo" src="./img/logo 1.png" alt="logo">
-        </div>
-        <div class="titulo">
-            <h1> Venta de sabanas y acolchados</h1>
-            <h2>Todo para tu cama o sommier</h2>
-        </div>
-
-        <div class="menu">
-            <nav>
-                <a href="./index.html" class="nav-">Inicio</a>
-                <a href="./productos.html" class="nav-">Productos</a>
-                <a href="./reseña.html" class="nav-">Reseña</a>
-                <a href="./contacto.html" class="nav-">Contacto</a>
-                <a href="" class="nav-">
-                    <label for="btn-modal">
-                        <div class="carrito">
-                            <span><i class="fa-solid fa-cart-shopping"></i></span>
-                            <span id="contador">0</span>
-                        </div>
-                    </label>
-                </a>
-            </nav>
-        </div>
-        <input type="checkbox" id="btn-modal">
-        <div class="contenedor_modal">
-            <div class="contenido_modal">
-                <h1>Tienda Online</h1>
-                <div id="carrito">
-                    <h2>Carrito de Compras</h2>
-                    <ul id="lista-carrito"></ul>
-                    <p>Total: $<span id="total-carrito">0</span></p>
-                    <ul id="lista-carrito"></ul>
-                </div>
-                <hr>
-
-
-                <button id="btnPagar">pagar</button>
-                <button id="vaciar-carrito">Vaciar Carrito</button>
-                <div class="btn-cerrar">
-                    <label for="btn-modal">cerrar</label>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <main >
-        <div id="subir"></div>
-        <h3  class="titulo-productos">Productos</h3>
-        <Section >
-
-            <ul>
-                <li><a href="#sabana_queen" class="b">
-                        <h4 class="subtitulo-productos">Sabanas Twin ,Queen y King size</h4>
-                        
-                    </a></li>
-            </ul>
-        </Section>
-        <div class="contenedor_productos">
-            <div class="col">
-                <div class="card">
-                    <img src="./img/imag_3.jpg"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">SÁBANA AJUSTABLE TWIN
-                            $29.000,00 </h5>
-                        <p class="card-text"> <strong>Modelo 1</strong></p>
-                        <p> 6 cuotas sin interés de $4.833,33</p>
-                        <button onclick="incrementar()" class="comprar" data-modelo="Modelo 1"
-                            data-nombre="SÁBANA AJUSTABLE TWIN" data-precio="29000.00">Comprar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/imag_1.jpg"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">SÁBANA AJUSTABLE TWIN
-                            $29.000,00 </h5>
-                        <p class="card-text"> <strong>Modelo 2</strong> </p>
-                        <p> 6 cuotas sin interés de $4.833,33</p>
-                        <button onclick="incrementar()" class="comprar" data-modelo="Modelo 2"
-                            data-nombre="SÁBANA AJUSTABLE TWIN" data-precio="29000.00">comprar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/imag_2.jpg"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">SÁBANA AJUSTABLE TWIN
-                            $29.000,00 </h5>
-                        <p class="card-text"> <strong>Modelo 3</strong> </p>
-                        <p> 6 cuotas sin interés de $4.833,33</p>
-                        <button onclick="incrementar()" class="comprar" data-modelo="Modelo 3"
-                            data-nombre="SÁBANA AJUSTABLE TWIN" data-precio="29000.00">comprar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/imag_4.jpg"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">SÁBANA AJUSTABLE TWIN
-                            $29.000,00 </h5>
-                        <p class="card-text"> <strong>Modelo 4</strong> </p>
-                        <p> 6 cuotas sin interés de $4.833,33</p>
-                        <button onclick="incrementar()" class="comprar" data-modelo="Modelo 4" data-nombre="SÁBANA AJUSTABLE TWIN"
-                            data-precio="29000.00">comprar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/imag_3.jpg"  class="card-img-top" alt="..." id="sabana_queen">
-                    <div class="card-body">
-                        <h5 class="card-title">SÁBANA AJUSTABLE QUEEN
-                            $29.000,00 </h5>
-                        <p class="card-text"> <strong>Modelo 1</strong></p>
-                        <p> 6 cuotas sin interés de $4.833,33</p>
-                        <button onclick="incrementar()" class="comprar" data-modelo="Modelo 1" data-nombre="SÁBANA AJUSTABLE QUEEN"
-                            data-precio="29000.00">comprar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/imag_1.jpg"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">SÁBANA AJUSTABLE QUEEN
-                            $29.000,00 </h5>
-                        <p class="card-text"> <strong>Modelo 2</strong></p>
-                        <p> 6 cuotas sin interés de $4.833,33</p>
-                        <button onclick="incrementar()" class="comprar" data-modelo="Modelo 2" data-nombre="SÁBANA AJUSTABLE QUEEN"
-                            data-precio="29000.00">comprar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/imag_2.jpg"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">SÁBANA AJUSTABLE QUEEN
-                            $29.000,00 </h5>
-                        <p class="card-text"> <strong>Modelo 3</strong></p>
-                        <p> 6 cuotas sin interés de $4.833,33</p>
-                        <button onclick="incrementar()" class="comprar" data-modelo="Modelo 3" data-nombre="SÁBANA AJUSTABLE QUEEN"
-                            data-precio="29000.00">comprar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="./img/imag_4.jpg"  class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">SÁBANA AJUSTABLE QUEEN
-                            $29.000,00 </h5>
-                        <p class="card-text"> <strong>Modelo 4</strong></p>
-                        <p> 6 cuotas sin interés de $4.833,33</p>
-                        <button onclick="incrementar()" class="comprar" data-modelo="Modelo 4" data-nombre="SÁBANA AJUSTABLE QUEEN"
-                            data-precio="29000.00">comprar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="#subir">
-            <h5 class="subir"> ---SUBIR----</h5>
+    <div class="y">
+        <a href="https://wa.me/541165779977?text=Deseo%20consultar%20" target="_blank" class="float">
+            <i class="fa-brands fa-whatsapp"></i>
         </a>
-       
-    </main>
-    <footer>
-        <section class="seccion-1">
-            <div>
-                <h3>Contactos</h3>
-                <p>info@gmail.com</p>
-                <p>+54 011 65887766</p>
-                <p>Av. Snopek 1374</p>
+        <header>
+            <div class="logo">
+                <img class="imagen-logo" src="./img/logo 1.png" alt="logo">
             </div>
-            <div>
-                <h3>Links</h3>
-                <a href="./index.html">Inicio</a>
-                <a href="./contacto.html">Contacto</a>
-                <a href="./reseña.html">Reseñas</a>
-                <a href="./compra.html">Compras</a>
+            <div class="titulo">
+                <h1> Venta de sabanas y acolchados</h1>
+                <h2>Todo para tu cama o sommier</h2>
             </div>
-            <div>
-                <h3>Redes Sociales</h3>
-                <div class="redes-sociales">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    
+
+            <div class="menu">
+                <nav>
+                    <a href="./index.html" class="nav-">Inicio</a>
+                    <a href="./productos.html" class="nav-">Productos</a>
+                    <a href="./reseña.html" class="nav-">Reseña</a>
+                    <a href="./contacto.html" class="nav-">Contacto</a>
+                    <a href="" class="nav-">
+                        <label for="btn-modal">
+                            <div class="carrito">
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span id="contador">0</span>
+                            </div>
+                        </label>
+                    </a>
+                </nav>
+            </div>
+            <input type="checkbox" id="btn-modal">
+            <div class="contenedor_modal">
+                <div class="contenido_modal">
+                    <h1>Tienda Online</h1>
+                    <div id="carrito">
+                        <h2>Carrito de Compras</h2>
+                        <ul id="lista-carrito"></ul>
+                        <p>Total: $<span id="total-carrito">0</span></p>
+                        <ul id="lista-carrito"></ul>
+                    </div>
+                    <hr>
+
+
+                    <button id="btnPagar">pagar</button>
+                    <button id="vaciar-carrito">Vaciar Carrito</button>
+                    <div class="btn-cerrar">
+                        <label for="btn-modal">cerrar</label>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="seccion-2">
-            <p><i class="fa-regular fa-copyright"></i>Desarrollado por :Felix Salvatierra - 2025.
-            </p>
-        </section>
-    </footer>
-    
-     <script src="./js/script.js"></script>
+        </header>
 
+        <main>
+            <div id="subir"></div>
+            <h3 class="titulo-productos">Productos</h3>
+            <Section>
 
+                <ul>
+                    <li><a href="#sabana_queen" class="b">
+                            <h4 class="subtitulo-productos">Sabanas Twin ,Queen y King size</h4>
+
+                        </a></li>
+                </ul>
+            </Section>
+            <div class="contenedor_productos">
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/imag_3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SÁBANA AJUSTABLE TWIN
+                                $29.000,00 </h5>
+                            <p class="card-text"> <strong>Modelo 1</strong></p>
+                            <p> 6 cuotas sin interés de $4.833,33</p>
+                            <button onclick="incrementar()" class="comprar" data-modelo="Modelo 1"
+                                data-nombre="SÁBANA AJUSTABLE TWIN" data-precio="29000.00">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/imag_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SÁBANA AJUSTABLE TWIN
+                                $29.000,00 </h5>
+                            <p class="card-text"> <strong>Modelo 2</strong> </p>
+                            <p> 6 cuotas sin interés de $4.833,33</p>
+                            <button onclick="incrementar()" class="comprar" data-modelo="Modelo 2"
+                                data-nombre="SÁBANA AJUSTABLE TWIN" data-precio="29000.00">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/imag_2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SÁBANA AJUSTABLE TWIN
+                                $29.000,00 </h5>
+                            <p class="card-text"> <strong>Modelo 3</strong> </p>
+                            <p> 6 cuotas sin interés de $4.833,33</p>
+                            <button onclick="incrementar()" class="comprar" data-modelo="Modelo 3"
+                                data-nombre="SÁBANA AJUSTABLE TWIN" data-precio="29000.00">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/imag_4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SÁBANA AJUSTABLE TWIN
+                                $29.000,00 </h5>
+                            <p class="card-text"> <strong>Modelo 4</strong> </p>
+                            <p> 6 cuotas sin interés de $4.833,33</p>
+                            <button onclick="incrementar()" class="comprar" data-modelo="Modelo 4"
+                                data-nombre="SÁBANA AJUSTABLE TWIN" data-precio="29000.00">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/imag_3.jpg" class="card-img-top" alt="..." id="sabana_queen">
+                        <div class="card-body">
+                            <h5 class="card-title">SÁBANA AJUSTABLE QUEEN
+                                $29.000,00 </h5>
+                            <p class="card-text"> <strong>Modelo 1</strong></p>
+                            <p> 6 cuotas sin interés de $4.833,33</p>
+                            <button onclick="incrementar()" class="comprar" data-modelo="Modelo 1"
+                                data-nombre="SÁBANA AJUSTABLE QUEEN" data-precio="29000.00">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/imag_1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SÁBANA AJUSTABLE QUEEN
+                                $29.000,00 </h5>
+                            <p class="card-text"> <strong>Modelo 2</strong></p>
+                            <p> 6 cuotas sin interés de $4.833,33</p>
+                            <button onclick="incrementar()" class="comprar" data-modelo="Modelo 2"
+                                data-nombre="SÁBANA AJUSTABLE QUEEN" data-precio="29000.00">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/imag_2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SÁBANA AJUSTABLE QUEEN
+                                $29.000,00 </h5>
+                            <p class="card-text"> <strong>Modelo 3</strong></p>
+                            <p> 6 cuotas sin interés de $4.833,33</p>
+                            <button onclick="incrementar()" class="comprar" data-modelo="Modelo 3"
+                                data-nombre="SÁBANA AJUSTABLE QUEEN" data-precio="29000.00">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/imag_4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">SÁBANA AJUSTABLE QUEEN
+                                $29.000,00 </h5>
+                            <p class="card-text"> <strong>Modelo 4</strong></p>
+                            <p> 6 cuotas sin interés de $4.833,33</p>
+                            <button onclick="incrementar()" class="comprar" data-modelo="Modelo 4"
+                                data-nombre="SÁBANA AJUSTABLE QUEEN" data-precio="29000.00">comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#subir">
+                <h5 class="subir"> ---SUBIR----</h5>
+            </a>
+
+        </main>
+        <footer>
+            <section class="seccion-1">
+                <div>
+                    <h3>Contactos</h3>
+                    <p>info@gmail.com</p>
+                    <p>+54 011 65887766</p>
+                    <p>Av. Snopek 1374</p>
+                </div>
+                <div>
+                    <h3>Links</h3>
+                    <a href="./index.html">Inicio</a>
+                    <a href="./contacto.html">Contacto</a>
+                    <a href="./reseña.html">Reseñas</a>
+                    <a href="./compra.html">Compras</a>
+                </div>
+                <div>
+                    <h3>Redes Sociales</h3>
+                    <div class="redes-sociales">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="seccion-2">
+                <p><i class="fa-regular fa-copyright"></i>Desarrollado por :Felix Salvatierra - 2025.
+                </p>
+            </section>
+        </footer>
+    </div>
 </body>
+<script src="./js/script.js"></script>
 
 </html>
