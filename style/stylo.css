@@ -161,7 +161,6 @@ main {
     text-align: center;
     width: 39%;
     height: 80%;
-    background-color:#7fdbff;
     border-radius: 5%;
 }
 .ubicacion {
@@ -348,4 +347,5 @@ footer .redes-sociales a{
 }
 .float:hover {
     background-color: #27e76d;
+
 }
