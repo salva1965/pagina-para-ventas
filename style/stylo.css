@@ -152,7 +152,7 @@ main {
     justify-content:baseline;
     align-items: center;
     gap: 20%;
-
+    margin: 2%;
 }
 .mensaje {
     margin: 2%;
@@ -349,3 +349,4 @@ footer .redes-sociales a{
     background-color: #27e76d;
 
 }
+
